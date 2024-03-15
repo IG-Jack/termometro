@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Termómetro Vertical
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div style="width: 100%;height: 100%;text-align: center;">
+  <ion-card-content style="display: flex;align-items: center;justify-content: center;text-align: center;">
+    <ion-icon slot="end" name="sunny-outline" style="font-size: 2rem;"></ion-icon>
+
+    <div class="range-container">
+      <ion-range aria-label="Volume" min="0" max="250" [(ngModel)]="temperaturaActual"></ion-range>
+
+    <hr/>
+
+    </div>
+
+    <ion-icon slot="end" name="sunny-outline"style="font-size: 2rem;"></ion-icon>
+
+
+  </ion-card-content>
+  <div style="display: block;">Temperatura actual: {{ temperaturaActual }}°C</div>
+
+</div>
+
+<div>
+<div style="width: 20%;height: 600px;display: flex;flex-direction: column-reverse;background-color: red;">
+
+  <ion-range aria-label="Volume" min="0" max="250" [(ngModel)]="temperaturaActual"></ion-range>
+
+</div>
+
+</div>
+</ion-content>
+
+
+
